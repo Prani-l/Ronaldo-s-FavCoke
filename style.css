@@ -20,8 +20,9 @@ html,body{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding-top: 15px;
-    
+    padding: 0 5vw;   
+    position: relative;
+    width: 100%;
 }
 .nav h5{
     font-weight: 200px;
@@ -68,8 +69,6 @@ html,body{
     display: flex;
     height: 90vh;
     width: 100%;
-    flex-wrap: wrap;
-    
 }
 
 .contentP1{
@@ -208,3 +207,60 @@ html,body{
     margin-top: -60px;
 }
 
+@media (max-width:500px) {
+    .nav{
+        justify-content: space-evenly;
+    }
+    .navP1{
+        padding: 0;
+    }
+    .nav .navP2 a{
+        display: none;
+    }
+    .nav .logo .line{
+        width: 25px;
+        height: 3px;
+    }
+    .nav i{
+        padding: 0 19px;
+        
+    }
+    .navP2 .logo img{
+        margin: -20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .contentP1{
+        width: 100%;
+        min-height: initial;
+        padding: 10vh 3vw;
+    }
+    .content .contentP1 h2{
+        font-size: 4.8vh;
+        margin-bottom: 1.9vh
+    }
+    .content .contentP1 p{
+        width: 90%;
+    }
+    .contentP2{
+        width: 100%;
+        background-color: green;
+    }
+    .contentP2 #can {
+        height: 50%;
+    }
+    .contentP2 .Capsule{
+        right: 0;
+        top: 10vh;
+        background-color: rgba(0, 0, 0, 0.481);
+    }
+    .contentP2 .Capsule #pp{
+        width: 16vw;
+        height: 6vh;
+    }
+    .contentP3{
+        width: 100%;
+        min-height: initial;
+        background-color: blueviolet;
+    }
