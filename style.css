@@ -245,10 +245,11 @@ html,body{
     }
     .contentP2{
         width: 100%;
-        background-color: green;
+        
     }
     .contentP2 #can {
-        height: 50%;
+        height: 71%;
+        bottom: 0.5vh;
     }
     .contentP2 .Capsule{
         right: 0;
@@ -260,7 +261,12 @@ html,body{
         height: 6vh;
     }
     .contentP3{
-        width: 100%;
+        width: 100vw;
         min-height: initial;
-        background-color: blueviolet;
     }
+    .contentP3 .bottom{
+        position: relative;
+        margin-top: 10vh;
+    }
+
+}
