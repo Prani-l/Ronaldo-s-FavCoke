@@ -2,13 +2,20 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    font-family: gilroy;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url(./assets/fonts/Gilroy/Radomir\ Tinkov\ -\ Gilroy-Light.otf) format('opentype');
 }
 html,body{
     height: 100%;
     width: 100%;
     background-color: black;
-    
+    font-family: 'gilroy', sans-serif;
+}
+a{
+    color: initial;
+    text-decoration: none;
 }
 .main{
     min-height: 100vh;
@@ -26,6 +33,7 @@ html,body{
     color: inherit;
     text-decoration: none;
 }
+
 .nav h5{
     font-weight: 200px;
     font-family: gilroy;
@@ -172,6 +180,7 @@ html,body{
 .contentP2>img{
     position: absolute;
     height: 60%;
+    width: 20vw;
     bottom: 79px;
     z-index: 2;
 }
@@ -182,7 +191,7 @@ html,body{
 }
 .contentP3 .bottom{
     position: absolute;
-    bottom: 8vh;
+    bottom: 6vh;
     padding: 0 2vw;
     display: flex;
     flex-direction: column;
@@ -208,6 +217,24 @@ html,body{
     color: whitesmoke;
     padding: 60px;
     margin-top: -60px;
+}
+#scrolld{
+    display: flex;
+    padding: 20px;
+    color: #fff;
+    justify-content: baseline;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+#circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
 }
 
 @media (max-width:500px) {
@@ -256,6 +283,7 @@ html,body{
     .contentP2 #can {
         height: 71%;
         bottom: 0.5vh;
+        width: 60vw;
     }
     .contentP2 .Capsule{
         right: 0;
